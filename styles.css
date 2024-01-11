@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body{
+      background: #0b0b0b;
+      color: #fff;
+      background-image: url(images/newback.jpg);
+      overflow-x: hidden;
+    
+ }
+
+#head{
+    width: 100%;
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.me_img{
+     width: 30%;
+     position: absolute;
+     right: 10px;
+     bottom: 10px;
+     margin: 0px 10%;
+}
+
+.list{
+    padding: 2px 3%;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 50px;
+    height: 12vh;
+    position: relative;
+    left: 15px;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 30px 35px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    
+}
+
+nav ul li a::after{
+    content: '';
+     width: 0;
+     height: 3px;
+     background: white;
+     position: absolute;
+     left: 0px;
+     bottom: -7px;
+     transition: 0.5s;
+}
+    
+nav ul li a:hover::after{
+         width: 100%;
+
+
+}
+
+.head_text{
+     
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+.head_text h1{
+    color: white;
+    font-size: 45px;
+}
+
+.head_text h1 span{
+    color: rgb(245, 44, 44);
+}
+
+
+#intro{
+    color: rgb(163, 168, 168);
+    font-family: monospace;
+    font-size: 16px;
+}
+    /*---- about me ---*/
+
+.about{
+    display: flex;
+    margin-top: 16%;
+    width: 13%;     
+}
+
+#about_h1{
+    color: rgb(245,44, 44);
+    font-family: 'Kalnia', serif;
+
+}
+
+.about pre{
+     position: relative;
+     right: -33px;
+     top: 35px;
+     font-size: 20px;
+     text-align: justify;
+     text-justify: inter-word;
+    
+}
+
+.me_img2{
+    padding: 25px 30%;
+    position: relative;
+    top: -99px
+}
+
+.about-icon{
+    color: rgb(245, 44, 44);
+    font-size: 29px;
+    position: absolute;
+    top: 760px;
+    right: 580px;
+}
+   /*----skills----*/
+
+#skills{
+    margin-top: 100px;
+}
+
+#skills h1{
+    font-size: 50px;
+    position: relative;
+    left: 50px;
+    font-family: 'Kalnia', serif;
+    color: rgb(245, 44, 44);
+}
+
+#skills h2{
+
+    text-align: center;
+     font-family: 'Exo 2', sans-serif;
+     text-decoration: none;
+     font-size: 28px;
+}
+
+#skills2 h2{
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.skill-icon{
+    color: rgb(245, 44, 44);
+    font-size: 38px;
+    position: absolute;
+    top: 1430px;
+    right: 1010px;    
+}
+
+.tech-icon{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    position: absolute;
+    top: 1541px;
+    right: 520px;  
+}
+
+.nontec-icon{
+     color: #fff;
+     font-size: 25px;
+     position: absolute;
+     top: 2450px;
+    right: 500px;
+
+}
+
+
+/*----Projects------*/
+
+#Projects{
+    font-family: 'Kalnia', serif;
+    padding-top: 11px;
+    padding-left: 50px;
+    font-size: 39px;
+    border-radius: 5px;
+    color: rgb(245, 44, 44);
+     
+}
+
+
+
+.P1{                       /*---P1---*/
+   border: 1px solid #fff;
+   background-image: url(images/pro-back.jpg);
+   padding: 5px;
+   margin-bottom: 5px;
+   cursor: pointer;
+   transition: all 0.5s;
+   width: 700px;
+   margin-left: 40px;
+   
+}
+
+.P1 h2{
+     
+     color: black;
+     font-weight;
+     font-family: 'Kalnia', serif;
+     
+}
+
+.P1 pre{
+    
+    font-weight: bold;
+    text-align: justify;
+    text-justify: inter-word;
+    color: #0b0b0b;
+    font-weight: 50px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
+}
+
+.Pro1-img{
+    position: absolute;
+    right: 56px;
+    top: 3630px;
+    border: 1px solid #fff;
+
+   background-color: rgb(79, 78, 78);
+   cursor: pointer;
+   width: 500px;
+}
+
+
+.P2{                         /*---P2---*/
+    border: 1px solid #fff;
+   background-image: url(images/pro-back.jpg);
+   padding: 5px;
+   margin-bottom: 5px;
+   cursor: pointer;
+   transition: all 0.5s;
+   width: 700px;
+   margin-left: 40px;
+}
+
+
+.P2 h2{
+    color: black;
+     font-family: 'Kalnia', serif;
+}
+
+.P2 pre{
+    font-weight: bold;
+    text-align: justify;
+    text-justify: inter-word;
+    color: #0b0b0b;
+    font-weight: 50px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+.Pro2-img{
+    position: absolute;
+    right: 9px;
+    top: 4059px;
+    margin-right: 3%;
+
+    border: 1px solid #fff;
+   background-color: rgb(79, 78, 78);
+   cursor: pointer;
+   width: 500px;    
+}
+
+
+button{
+    width: 115px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 530px;
+    color: rgb(18, 201, 242);
+    font-family:monospace;
+    background-color: rgb(233, 173, 130);
+    background-image: url();
+    
+    
+}
+
+button a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: cursive;
+}
+
+.pro-icon{
+    color: rgb(245, 44, 44);
+     font-size: 31px;
+     position: absolute;
+     top: 3450px;
+     right: 936px;
+}
+
+/*-------MY RESUME----*/
+
+#Resume{
+    font-family: 'Kalnia', serif;
+     padding-top: 11px;
+     padding-left: 50px;
+     font-size: 40px;
+     border-radius: 5px;
+     color: rgb(245, 44, 44);
+     
+}
+ .RES pre{
+    font-family: monospace;
+    font-size: 16px;
+    text-align: justify;
+    text-justify: inter-word;
+    
+ }
+
+.down-bttn{             /*---download button--*/
+       background-color: rgb(245, 44, 44);
+       color: white;
+       padding: 12px 15px;
+       font-size: 16px;
+       text-decoration: none;
+       border-radius: 5px;
+       position: absolute;
+       right: 550px;
+       top: 4910px;
+}
+
+.res-icon{
+    color: rgb(245, 44, 44);
+    font-size: 32px;
+    position: absolute;
+    top: 4607px;
+    right: 925px;
+}
+
+
+/*----------CONTACT---------*/
+
+#Contact{
+    font-family: monospace;
+     padding-top: 10px;
+     padding-left: 50px;
+     font-size: 40px;
+     border-radius: 5px;
+     font-family: 'Kalnia', serif;
+     color: rgb(245,44,44);
+}
+
+.call{                            /*-----call---*/
+    position: absolute;
+    top: 5210px;
+    right:1050px;
+
+}
+
+.contact1 p{
+    position: absolute;
+    top: 5219px;
+    right: 920px;
+    font-size: 19px;
+font-family: 'Source Code Pro', monospace;
+}
+       
+.mail{                     /*-----mail---*/
+    position: absolute;
+    top: 5300px;
+    right:1050px
+}
+
+.contact2 p{
+    position: absolute;
+    top: 5305px;
+    right: 798px;
+    font-size: 19px;
+    
+}
+
+.contact-icon{
+    color: rgb(245,44, 44);
+    font-size: 31px;
+    position: absolute;
+    top: 5080px;
+    right: 925px;
+}
+
+
+/*------FOOTER-----*/
+
+.footer{
+    background-color: rgb(245, 44, 44);
+    padding: 7px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    font-style: italic;
+}
+
+
+/*----GO TOP-----*/
+
+.goUp{
+    position:fixed;
+    width: 35px;
+    height: 35px;
+    bottom: 40px;
+    right: 50px;
+    background: rgb(245, 44, 44);
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    border-radius: 10px;
+}
